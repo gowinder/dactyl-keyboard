@@ -1,6 +1,5 @@
 import json
 
-
 pi = 3.14159
 d2r = pi / 180
 r2d = 180 / pi
@@ -164,7 +163,7 @@ shape_config = {
     # 'HS_UNDERCUT' = hot swap underside with undercut. Does not generate properly.  Hot swap step needs to be modified.
     # 'HS_NOTCH' = hot swap underside with notch.  Does not generate properly.  Hot swap step needs to be modified.
     # 'plate_style':  'NUB',
-    'plate_style': 'NOTCH',
+    'plate_style': 'HS_NUB',
 
     'hole_keyswitch_height':  14.0,
     'hole_keyswitch_width':  14.0,
