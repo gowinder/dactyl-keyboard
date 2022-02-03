@@ -61,7 +61,7 @@ else:
 ####################################################
 
 
-debug_exports = False
+debug_exports = True
 debug_trace = False
 
 def debugprint(info):

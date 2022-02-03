@@ -6,8 +6,8 @@ r2d = 180 / pi
 
 shape_config = {
 
-    # 'ENGINE': 'solid',  # 'solid' = solid python / OpenSCAD, 'cadquery' = cadquery / OpenCascade
-    'ENGINE': 'cadquery',  # 'solid' = solid python / OpenSCAD, 'cadquery' = cadquery / OpenCascade
+    'ENGINE': 'solid',  # 'solid' = solid python / OpenSCAD, 'cadquery' = cadquery / OpenCascade
+    # 'ENGINE': 'cadquery',  # 'solid' = solid python / OpenSCAD, 'cadquery' = cadquery / OpenCascade
 
 
     ######################
@@ -17,7 +17,7 @@ shape_config = {
     'save_dir': '.',
     'config_name':  "DM",
 
-    'show_caps': True,
+    'show_caps': False,
     'show_pcbs': False, #only runs if caps are shown, easist place to initially inject geometry
 
     'nrows':  5, #5,  # key rows
@@ -25,7 +25,7 @@ shape_config = {
 
     'alpha':  pi / 12.0,  # curvature of the columns
     'beta':  pi / 36.0,  # curvature of the rows
-    'centercol':  3,  # controls left_right tilt / tenting (higher number is more tenting)
+    'centercol':  4,  # controls left_right tilt / tenting (higher number is more tenting)
     'centerrow_offset':  3,  # rows from max, controls front_back tilt
     'tenting_angle':  pi / 12.0,  # or, change this for more precise tenting control
 
@@ -44,7 +44,7 @@ shape_config = {
     # THUMB PARAMETERS
     ##############################
     # 'DEFAULT' 6-key, 'MINI' 5-key, 'CARBONFET' 6-key, 'MINIDOX' 3-key, 'TRACKBALL_ORBYL', 'TRACKBALL_CJ'
-    'thumb_style': 'MINIDOX',
+    'thumb_style': 'CARBONFET',
     'default_1U_cluster': True, # only used with default, makes top right thumb cluster key 1U
     # Thumb key size.  May need slight oversizing, check w/ caps.  Additional spacing will be automatically added for larger keys.
     'minidox_Usize': 1.6,
@@ -122,7 +122,7 @@ shape_config = {
     ##############################
 
 
-    'extra_width':  2.5,  # extra space between the base of keys# original= 2
+    'extra_width':  2.0,  # extra space between the base of keys# original= 2
     'extra_height':  1.0,  # original= 0.5
 
     'wall_z_offset':  15,  # length of the first downward_sloping part of the wall
